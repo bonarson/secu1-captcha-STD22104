@@ -16,7 +16,7 @@ const CaptchaLogin = () => {
     script.onload = () => {
       if (captchaRef.current && window.AwsWafCaptcha) {
         window.AwsWafCaptcha.renderCaptcha(captchaRef.current, {
-          apiKey: 'TBiG/...==',
+          apiKey: 'YcvmaE4lEl0urbOP3tvzNKk46QwMy6Z2JJa4lKpKwhCBOPd8Nk/Ti+TydlxSRQ9lqnVSmdY5qEf0qe936WficIYeKLCa/ohzNdVSPlEIY4JjBKl8M8gqW4G4gPBY38VW05PNIoSWnoSxLO91ZSJbiz71NkB92u2QCdGov5srimJX1s6cjVjjRV98dqFEMqi16qKrNfIcb3ewlldWgMS77aaKI0t0FUGBPzlkTCRBGAoi7vCEzDbPAW90Y1p/jfr/jYGk6ECLWmWz0ClCmVfqrl4B9W7LSrx3X3qkeOdKiFsiQsWAarjKdh89UzWSXQ8CWeHc5X3h6hIt/x+t2r6dujyuy+KLmnuGMp3AYhrQrT7dIeztJRYDStN4xUDruYFtdX0ZkeSf0Qi8hCg/HXgfsK5+9G+fYNlIcE//f1brGfwTFflaqo7qsnqrxlIJ98eZgyXF79XyCan2GyEs0gSKW9u+w5ccuWwP4p1ghe0H+HGMJLJWBuTFiFuwbfukyPoBLMdfgqOf0JuBsHQTqzp8epSjtpLZRNGVxKkZbpQv5zVWjWFlbKMjl3EVaYQviPMvFvTKIWYHlSDE35FV/X2Ta17C/nGBrm9xowWAXjhpf8OwEBhTBVZaeadrecgFGPo20An+bXEoLGVgct9ZqBqxUIudXXDsBH3iRwBoNbJWOSA=_0_1',
           onSuccess: () => {
             const submitButton = document.getElementById('submit-btn') as HTMLButtonElement | null;
             if (submitButton) submitButton.disabled = false;
