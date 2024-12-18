@@ -1,6 +1,10 @@
 import { useEffect, useRef } from 'react';
 import styles from './style.module.css';
 
+// Définir un type pour l'erreur du captcha
+type CaptchaError = {
+  message: string;
+};
 
 const CaptchaLogin = () => {
   const captchaRef = useRef<HTMLDivElement | null>(null);
@@ -20,7 +24,8 @@ const CaptchaLogin = () => {
             const errorContainer = document.getElementById('error-container') as HTMLElement | null;
             if (errorContainer) errorContainer.textContent = '';
           },
-          onError: (error: any) => {
+          // Typage de l'erreur avec CaptchaError
+          onError: (error: CaptchaError) => {
             const errorContainer = document.getElementById('error-container') as HTMLElement | null;
             if (errorContainer) {
               errorContainer.textContent = error.message;
