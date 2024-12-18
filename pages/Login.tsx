@@ -16,8 +16,8 @@ const CaptchaLogin = () => {
     script.onload = () => {
       if (captchaRef.current && window.AwsWafCaptcha) {
         window.AwsWafCaptcha.renderCaptcha(captchaRef.current, {
-          
-          apiKey: 'YcvmaE4lEl0urbOP3tvzNKk46QwMy6Z2JJa4lKpKwhCBOPd8Nk/Ti+TydlxSRQ9lqnVSmdY5qEf0qe936WficIYeKLCa/ohzNdVSPlEIY4JjBKl8M8gqW4G4gPBY38VW05PNIoSWnoSxLO91ZSJbiz71NkB92u2QCdGov5srimJX1s6cjVjjRV98dqFEMqi16qKrNfIcb3ewlldWgMS77aaKI0t0FUGBPzlkTCRBGAoi7vCEzDbPAW90Y1p/jfr/jYGk6ECLWmWz0ClCmVfqrl4B9W7LSrx3X3qkeOdKiFsiQsWAarjKdh89UzWSXQ8CWeHc5X3h6hIt/x+t2r6dujyuy+KLmnuGMp3AYhrQrT7dIeztJRYDStN4xUDruYFtdX0ZkeSf0Qi8hCg/HXgfsK5+9G+fYNlIcE//f1brGfwTFflaqo7qsnqrxlIJ98eZgyXF79XyCan2GyEs0gSKW9u+w5ccuWwP4p1ghe0H+HGMJLJWBuTFiFuwbfukyPoBLMdfgqOf0JuBsHQTqzp8epSjtpLZRNGVxKkZbpQv5zVWjWFlbKMjl3EVaYQviPMvFvTKIWYHlSDE35FV/X2Ta17C/nGBrm9xowWAXjhpf8OwEBhTBVZaeadrecgFGPo20An+bXEoLGVgct9ZqBqxUIudXXDsBH3iRwBoNbJWOSA=_0_1',
+
+          apiKey: 'Q/m/79U9w0SFyCmTueiCEKPp2QhjffChFIKBt4sCJjNoap2VoxKhdGWYDKjSOI5PJ2TAAKfMMWuN32dhc8ueSLG+oJ7C5768eIs//uUkUOyXv5iY97suoaV59+QDqt4b7IBbpFEZldZcv1INQvClips5D4Hw2dJ9xcJ6UbjqQ42+NGUbdL4/9iO+3LhIoMmM5XBb9a2kTb6bLhPzY3PQplF3Gm0co1mBhWrDjdFO6EcZRC+uSs+IDWWLavFCuzt12UC9zh+KA88qyP0M2BoylDb/SnFf90qQIN64R6oDneH8tgGmeDKXaZ72s/s80ABvOr9AX+ELvN4tl+JPeIyxMstSfY5FViEOsehWQGQjMsvVxqO0vJd1sK5Z6LAg+lN/HQcaV1ai3p3xEw/01byPm4fEx0xVTuyvoIddPB5nLOAXXg05PlO4rcVOYKiUt7OcKeAt0Vqs8QPnGmqbM8c0jBHAMbN55dP4U9236E+/u/FMt631hf9ShbH1Lka5wBDYmGNcwoKglE/9oeohP8jLlef/XHHjGzWxjpaa+JCYBNlOqOqHl1hh7Y8lSuw/NLx61RZK4v7HmX2qjzNzcd+E5sILg65GlBl6abdk/jgQf0MP/GuoDIZtfizJi3P0psql2Bh72iSF+q4m5sSSkRkV3NYp15EeZFzAx1X6GgR35ng=_0_1',
           onSuccess: () => {
             const submitButton = document.getElementById('submit-btn') as HTMLButtonElement | null;
             if (submitButton) submitButton.disabled = false;
